@@ -95,7 +95,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{() -> signUpViewModel.submitForm()}"
-                android:padding="10dp"
                 android:text="@string/submit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
