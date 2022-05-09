@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">SignUpProject</string>
+    <string name="app_name">Sign Up Project</string>
+
+    <string name="sign_up_header">Profile Creation</string>
+    <string name="sign_up_help_text">Use the form below to submit your portfolio. \nAn email and password are required.</string>
+
+    <string name="first_name">First Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="website">Website</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_password">Password must be at least 6 characters</string>
+
 </resources>

@@ -3,20 +3,112 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="signUpViewModel"
+            type="com.miraka.signupproject.SignUpViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SignUpActivity">
+        android:layout_margin="@dimen/main_view_margin"
+        tools:context=".signUp.SignUpActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/page_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sign_up_header" />
+
+            <TextView
+                style="@style/page_description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="@string/sign_up_help_text" />
+
+            <EditText
+                android:id="@+id/first_name_edit_field"
+                style="@style/input_field_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:autofillHints="@string/first_name"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName"
+                android:text="@={signUpViewModel.firstName}" />
+
+            <EditText
+                android:id="@+id/email_edit_field"
+                style="@style/input_field_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_form_space"
+                android:autofillHints="@string/email_address"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:text="@={signUpViewModel.emailAddress}" />
+
+            <EditText
+                android:id="@+id/password_edit_field"
+                style="@style/input_field_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_form_space"
+                android:autofillHints="@string/password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:text="@={signUpViewModel.password}" />
+
+            <EditText
+                android:id="@+id/website_edit_field"
+                style="@style/input_field_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_form_space"
+                android:autofillHints="@string/website"
+                android:hint="@string/website"
+                android:inputType="textUri"
+                android:text="@={signUpViewModel.website}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> signUpViewModel.submitForm()}"
+                android:padding="10dp"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

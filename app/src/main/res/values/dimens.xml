@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="main_view_margin">20dp</dimen>
+
+    <dimen name="header_text_size">35sp</dimen>
+
+    <dimen name="signup_form_space">10sp</dimen>
+    <dimen name="signup_form_inside_padding">20sp</dimen>
+</resources>
