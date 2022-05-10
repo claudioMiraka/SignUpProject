@@ -13,4 +13,12 @@
     <string name="invalid_email">Invalid Email</string>
     <string name="invalid_password">Password must be at least 6 characters</string>
 
+
+    <string name="confirmation_header">Hello, %s!</string>
+    <string name="there">There</string>
+    <string name="confirmation_help_text">Your super-awesome portfolio has been successfully submitted! The details below will be public within your community!</string>
+
+    <string name="url_lunch_error">Error: could not launch url!</string>
+    <string name="sign_in">Sign In</string>
+
 </resources>
