@@ -1,4 +1,4 @@
-package com.miraka.signupproject
+package com.miraka.signupproject.view.signUp
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.miraka.signupproject.R
 import com.miraka.signupproject.databinding.ActivitySignUpBinding
 import com.miraka.signupproject.view.confirmation.ConfirmationActivity
 import dagger.hilt.android.AndroidEntryPoint

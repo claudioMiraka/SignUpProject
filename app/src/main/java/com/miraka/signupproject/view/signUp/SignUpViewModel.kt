@@ -1,4 +1,4 @@
-package com.miraka.signupproject
+package com.miraka.signupproject.view.signUp
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

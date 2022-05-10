@@ -13,6 +13,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
 import androidx.test.platform.app.InstrumentationRegistry
 import com.miraka.signupproject.view.confirmation.ConfirmationActivity
+import com.miraka.signupproject.view.signUp.SignUpActivity
 import org.hamcrest.core.IsNot.not
 import org.junit.After
 import org.junit.Before

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="signUpViewModel"
-            type="com.miraka.signupproject.SignUpViewModel" />
+            type="com.miraka.signupproject.view.signUp.SignUpViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
