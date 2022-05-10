@@ -14,3 +14,13 @@ Hilt is used as a depency injector.
 
 Since the form is not submitted to a real service, no persistance is implemented. The user data lives in memory in a UserRepository object.
 
+
+## Screenshots
+<p>
+  <img src="Screenshots/signup_day.jpeg" width="30%" height="30%" >
+  <img src="Screenshots/confirmation_day.jpeg" width="30%" height="30%" >
+</p>
+<p>
+  <img src="Screenshots/signup_night.jpeg" width="30%" height="30%" >
+  <img src="Screenshots/confirmation_night.jpeg" width="30%" height="30%" >
+</p>
