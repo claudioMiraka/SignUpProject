@@ -81,11 +81,11 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <Button
-                android:id="@+id/submit_button"
+                android:id="@+id/sign_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="@{() -> signUpViewModel.signIn()}"
-                android:text="@string/submit"
+                android:text="@string/sign_in"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
